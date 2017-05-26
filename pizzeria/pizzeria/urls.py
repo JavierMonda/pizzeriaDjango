@@ -35,6 +35,6 @@ urlpatterns = [
     url(r'^api/v1/', include(api_urlpatterns)),
     url(r'^docs/', swagger_view),
     #url(r'^pizzas/', include('pizzas.urls'))
-    url(r'^', include('pizzas.urls'))
+    url(r'^', include('pizzas.urls')),
     url(r'^oauth/', include('social_django.urls', namespace='social')),
 ]
